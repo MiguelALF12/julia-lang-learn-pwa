@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <title>courseOne(v2)</title>
+    <title>Primeros pasos: contextualización</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
     <link rel="stylesheet" href="assets/css/modules.css">
+    <!-- <script src="assets/bootstrap/js/bs-init.js"></script> -->
 </head>
 
 <body>
@@ -17,13 +18,12 @@
     <div class="container-fluid" id="container">
         <!-- Start: NavBar -->
         <div class="row g-0" id="navbar">
-            <div class="col-9 col-sm-9 col-md-8 col-lg-4 col-xl-4 col-xxl-4"
-                style="padding-left: 10px;padding-right: 10px;">
+            <div class="col-9 col-sm-9 col-md-8 col-lg-4 col-xl-4 col-xxl-4" id="navBarImgDiv">
                 <img class="img-fluid visible" src="assets/img/logo_UTP.png" width="274" height="83"
-                    style="max-width: 100%;padding: 0px;" alt="Logo of Universidad Tecnológica de Pereira">
+                    alt="Logo of Universidad Tecnológica de Pereira">
             </div>
             <div class="col-3 col-sm-3 col-md-4 col-lg-8 col-xl-8 col-xxl-8 text-end text-sm-end text-md-end text-lg-end text-xl-end text-xxl-end"
-                style="padding-right: 15px;">
+                id="navBarLinksDiv">
                 <!-- Start: Navbar Right Links -->
                 <nav class="navbar navbar-light navbar-expand-sm sticky-top d-inline-block py-3">
                     <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler"
@@ -43,7 +43,7 @@
         </div><!-- End: NavBar -->
         <!-- Start: homeLinkAndModuleHeader -->
         <div class="row g-0" id="header">
-            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 text-center my-auto" style="width: 75.9px;">
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 text-center my-auto" id="btnDiv">
                 <a class="btn visible" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" target="_blank"
                     title="Regresar al inicio" id="homeLink"></a>
             </div>
@@ -54,10 +54,9 @@
             </div>
         </div><!-- End: homeLinkAndModuleHeader -->
         <!-- Start: moduleContent -->
-        <div class="row g-0" style="padding-top: 10px;">
+        <div class="row g-0 py-3">
             <!-- Start: contentTable -->
-            <div class="col-sm-auto col-md-auto col-lg-2 col-xl-2 col-xxl-2 text-break"
-                style="position: sticky;padding-left: 12px;padding-top: 10px;padding-bottom: 20px;">
+            <div class="col-sm-auto col-md-auto col-lg-2 col-xl-2 col-xxl-2 text-break" id="contentTableDiv">
                 <ol>
                     <li>Item 1<ul>
                             <li>Item 1</li>
@@ -90,7 +89,7 @@
                 </ol>
             </div><!-- End: contentTable -->
             <!-- Start: content -->
-            <div class="col-sm-auto col-md-auto col-lg-10 col-xl-10 col-xxl-10" style="padding: 0px;">
+            <div class="col-sm-auto col-md-auto col-lg-10 col-xl-10 col-xxl-10">
                 <!-- Start: ModuleSubjects-Title -->
                 <div class="row g-0">
                     <div class="col">
@@ -101,8 +100,8 @@
                 <div class="row g-0">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <!-- Start: ModuleSubject-Description -->
-                        <section style="padding-right: 20px;padding-left: 20px;">
-                            <p class="lead text-break fs-4" style="text-align: justify;">Lorem ipsum dolor sit amet,
+                        <section>
+                            <p class="lead text-break fs-4">Lorem ipsum dolor sit amet,
                                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                 aliqua. Leo duis ut diam quam nulla. Dignissim convallis aenean et tortor. Vitae semper
                                 quis lectus nulla at volutpat. At varius vel pharetra vel turpis nunc. Nulla at volutpat
@@ -331,7 +330,7 @@
                                 Eu ultrices vitae auctor eu augue ut lectus arcu bibendum.<br></p>
                         </section><!-- End: ModuleSubject-Description -->
                         <!-- Start: ModuleSubject-pagination -->
-                        <div class="row g-0" style="margin-top: 35px;margin-bottom: 35px;">
+                        <!-- <div class="row g-0" style="margin-top: 35px;margin-bottom: 35px;">
                             <div
                                 class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center align-self-center">
                                 <button class="btn btn-primary" type="button">Tema anterior</button>
@@ -341,7 +340,7 @@
                                 class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center align-self-center">
                                 <button class="btn btn-primary" type="button">Tema siguiente</button>
                             </div>
-                        </div><!-- End: ModuleSubject-pagination -->
+                        </div>End: ModuleSubject-pagination -->
                     </div>
                 </div><!-- End: ModuleSubject container -->
             </div><!-- End: content -->
@@ -352,9 +351,9 @@
         <div class="container py-4 py-lg-5">
             <div class="row d-xxl-flex flex-row justify-content-xxl-center">
                 <!-- Start: Services -->
-                <div class="col-sm-4 col-md-3 text-lg-start d-flex flex-column align-items-xxl-center item"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                        viewBox="0 0 16 16" class="bi bi-star" style="font-size: 112px;">
+                <div class="col-sm-4 col-md-3 text-lg-start d-flex flex-column align-items-xxl-center item"
+                    id="footerLogo"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                        viewBox="0 0 16 16" class="bi bi-star">
                         <path
                             d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
                         </path>
@@ -374,7 +373,6 @@
                     <ul class="list-unstyled">
                         <li><a class="link-light" href="#">Something</a></li>
                         <li><a class="link-light" href="#">Something</a></li>
-                        <li><a href="#"><span style="color: rgb(249, 250, 251);">Something</span></a><br></li>
                     </ul>
                 </div><!-- End: Careers -->
             </div>
@@ -405,7 +403,7 @@
         </div>
     </footer><!-- End: Footer -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
+    <!-- <script src="../renders/modules.js"></script> -->
 </body>
 
 </html>

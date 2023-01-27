@@ -21,30 +21,38 @@ const createWindow = () => {
     mainWindow.show();
 }
 
-const createChildWindow = () => {
-    const childWindow = new BrowserWindow(
-        {
-            width: 1000,
-            height: 700,
-            webPreferences: {
-                nodeIntegration: true,
-                contextIsolation: false,
-                // preload: path.join(__dirname, 'preload.js')
-            },
-            show: false,
-            parent: mainWindow,
-        }
-    )
-    childWindow.loadFile("./templates/modulesOne.html");
+const createChildWindow = (moduleHTMLName) => {
+    childWindow = new BrowserWindow({
+        width: 1000,
+        height: 700,
+        show: false,
+        parent: mainWindow,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+            enableRemoteModule: true,
+        },
+    });
+    let moduleName = typeof moduleHTMLName == "string" ? moduleHTMLName.substring(0, (moduleHTMLName.length - 3)) : "error"
+    childWindow.loadFile(`./templates/${moduleName}.html`);
     childWindow.once("ready-to-show", () => {
+
+        childWindow.maximize();
         childWindow.show();
     })
 }
 
 ipcMain.on("openChildWindow", (event, args) => {
-    // console.log("Hello");
-    createChildWindow();
+    createChildWindow(args);
 })
+
+// ipcMain.on('goHome', (event, args) => {
+//     console.log("hello")
+//     console.log(BrowserWindow.getAllWindows());
+//     const webContents = event.sender
+//     const win = BrowserWindow.fromBrowserView(webContents);
+//     win.close();
+// })
 
 app.whenReady().then(() => {
     createWindow();

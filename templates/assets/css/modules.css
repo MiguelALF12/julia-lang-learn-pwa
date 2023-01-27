@@ -11,6 +11,10 @@
     position: sticky;
 }
 
+#btnDiv {
+    width: 75.9px;
+}
+
 #navbar {
     margin: 0px;
     position: sticky;
@@ -43,4 +47,33 @@
     font-size: 20px;
     color: var(--bs-white);
     text-align: left;
+}
+
+#navBarImgDiv {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#navBarImgDiv>div {
+    max-width: 100%;
+}
+
+#navBarLinksDiv {
+    padding-right: 15px;
+}
+
+#contentTableDiv {
+    position: sticky;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+section {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#footerLogo {
+    font-size: 112px;
 }
