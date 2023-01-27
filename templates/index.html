@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'" />
     <title>Julia project</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
+    <script src="../preload.js"></script>
 </head>
 
 <body>
@@ -168,56 +170,56 @@
                     <!-- Start: Module-1 -->
                     <div class="col-auto col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3" style="padding: 10px;">
                         <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
-                                src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                                src="./assets/img/placeholder.png">
                             <div class="card-body p-4">
                                 <p class="text-primary card-text mb-0">Article</p>
                                 <h4 class="card-title">Primeros pasos: contextualización</h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
                                     odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
                                     at eget metus.</p>
-                                <a class="btn btn-primary" href="./modulesOne.html">Button</a>
+                                <a class="btn btn-primary" role="button" onclick="goToModule('modulesOne')">Button</a>
                             </div>
                         </div>
                     </div><!-- End: Module-1 -->
                     <!-- Start: Module-2 -->
                     <div class="col-auto col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 d-flex" style="padding: 10px;">
                         <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
-                                src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                                src="./assets/img/placeholder.png">
                             <div class="card-body flex-column p-4">
                                 <p class="text-primary card-text mb-0">Article</p>
                                 <h4 class="card-title">Conceptos básicos</h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
                                     odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
                                     at eget metus.</p>
-                                <a class="btn btn-primary" href="./modulesSecond.html">Button</a>
+                                <a class="btn btn-primary">Button</a>
                             </div>
                         </div>
                     </div><!-- End: Module-2 -->
                     <!-- Start: Module-3 -->
                     <div class="col-auto col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 d-flex" style="padding: 10px;">
                         <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
-                                src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                                src="./assets/img/placeholder.png">
                             <div class="card-body p-4">
                                 <p class="text-primary card-text mb-0">Article</p>
                                 <h4 class="card-title">Explorando modulos</h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
                                     odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
                                     at eget metus.</p>
-                                <a class="btn btn-primary" href="./modulesThree.html">Button</a>
+                                <a class="btn btn-primary">Button</a>
                             </div>
                         </div>
                     </div><!-- End: Module-3 -->
                     <!-- Start: Module-4 -->
                     <div class="col-auto col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 d-flex" style="padding: 10px;">
                         <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
-                                src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
+                                src="./assets/img/placeholder.png">
                             <div class="card-body p-4">
                                 <p class="text-primary card-text mb-0">Article</p>
                                 <h4 class="card-title">Otros recursos para el aprendizaje</h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
                                     odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
                                     at eget metus.</p>
-                                <a class="btn btn-primary" href="./modulesFour.html">Button</a>
+                                <button class="btn btn-primary" role="button">Button</button>
                             </div>
                         </div>
                     </div><!-- End: Module-4 -->
