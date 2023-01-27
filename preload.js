@@ -1,6 +1,6 @@
-const { ipcRenderer } = require('electron');
+const { contextBridge, ipcRenderer } = require('electron');
 
-function goToModule(name) {
-    console.log(name)
-    ipcRenderer.send('openChildWindow')
-}
+
+contextBridge.exposeInMainWorld('electronAPI', {
+    goBackHome: () => ipcRenderer.send('goHome')
+})

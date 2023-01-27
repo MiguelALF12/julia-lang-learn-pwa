@@ -11,6 +11,7 @@ const createWindow = () => {
             webPreferences: {
                 nodeIntegration: true,
                 contextIsolation: false,
+                // preload: path.join(__dirname, './preload.js')
             },
             show: false,
         }
@@ -31,6 +32,7 @@ const createChildWindow = (moduleHTMLName) => {
             nodeIntegration: true,
             contextIsolation: false,
             enableRemoteModule: true,
+            // preload: path.join(__dirname, './preload.js')
         },
     });
     let moduleName = typeof moduleHTMLName == "string" ? moduleHTMLName.substring(0, (moduleHTMLName.length - 3)) : "error"
@@ -46,13 +48,15 @@ ipcMain.on("openChildWindow", (event, args) => {
     createChildWindow(args);
 })
 
-// ipcMain.on('goHome', (event, args) => {
-//     console.log("hello")
-//     console.log(BrowserWindow.getAllWindows());
-//     const webContents = event.sender
-//     const win = BrowserWindow.fromBrowserView(webContents);
-//     win.close();
-// })
+function closeChildWindow(event) {
+    if (event) {
+        event.sender.close();
+    }
+}
+ipcMain.on('goHome', (e, args) => {
+    closeChildWindow(e);
+    // console.log(BrowserWindow.getAllWindows());
+});
 
 app.whenReady().then(() => {
     createWindow();
