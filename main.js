@@ -32,7 +32,6 @@ const createChildWindow = (moduleHTMLName) => {
             nodeIntegration: true,
             contextIsolation: false,
             enableRemoteModule: true,
-            // preload: path.join(__dirname, './preload.js')
         },
     });
     let moduleName = typeof moduleHTMLName == "string" ? moduleHTMLName.substring(0, (moduleHTMLName.length - 3)) : "error"
@@ -57,6 +56,8 @@ ipcMain.on('goHome', (e, args) => {
     closeChildWindow(e);
     // console.log(BrowserWindow.getAllWindows());
 });
+
+
 
 app.whenReady().then(() => {
     createWindow();

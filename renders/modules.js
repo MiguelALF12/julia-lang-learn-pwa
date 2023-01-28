@@ -1,4 +1,4 @@
-const { ipcRenderer } = require('electron');
+const ipcRenderer = require('electron').ipcRenderer;
 
 const goToHome = document.getElementById("homeLink")
 goToHome.addEventListener('click', (event) => {
@@ -7,3 +7,5 @@ goToHome.addEventListener('click', (event) => {
         ipcRenderer.send('goHome')
     }
 })
+
+const moduleTitle = document.getElementById("moduleTitleParagraph");

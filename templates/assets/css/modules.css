@@ -63,10 +63,10 @@
 }
 
 #contentTableDiv {
-    position: sticky;
     padding-left: 12px;
     padding-top: 10px;
     padding-bottom: 20px;
+    position: fixed;
 }
 
 section {
