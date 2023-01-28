@@ -64,14 +64,38 @@
 
 #contentTableDiv {
     padding-left: 12px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
+    top: 20%;
+    left: 0;
+    bottom: 0;
     position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
+/* li {
+    border: #000 1px solid;
+} */
+
+#contentTableDiv li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#contentTableDiv li:hover {
+    color: #000;
+    background-color: #afafaf;
+}
+
+
 
 section {
     padding-right: 20px;
     padding-left: 20px;
+}
+
+footer {
+    position: relative;
 }
 
 #footerLogo {
