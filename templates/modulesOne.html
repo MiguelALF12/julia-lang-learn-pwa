@@ -10,51 +10,55 @@
     <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
     <link rel="stylesheet" href="assets/css/modules.css">
+    <link rel="stylesheet" href="assets/css/shared.css">
     <!-- <script src="assets/bootstrap/js/bs-init.js"></script> -->
 </head>
 
 <body>
+    <div class="sticky-top row g-0">
+        <!-- Start: NavBar -->
+        <header class="row g-0">
+            <div class="col-9 col-sm-9 col-md-8 col-lg-4 col-xl-4 col-xxl-4" id="navBarImgDiv">
+                <img class="img-fluid visible" src="assets/img/logo_UTP.png" width="274" height="83"
+                    alt="Logo of Universidad Tecnológica de Pereira">
+            </div>
+            <div class="col-3 col-sm-3 col-md-4 col-lg-8 col-xl-8 col-xxl-8 text-end text-sm-end text-md-end text-lg-end text-xl-end text-xxl-end"
+                id="navBarLinksDiv">
+                <!-- Start: Navbar Right Links -->
+                <nav class="navbar navbar-light navbar-expand-sm sticky-top d-inline-block py-3">
+                    <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler"
+                            data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span
+                                class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navcol-2">
+                            <ul
+                                class="navbar-nav navbar-nav-scroll text-start text-sm-start text-md-start text-lg-start text-xl-start text-xxl-start mx-auto">
+                                <li class="nav-item "><a class="nav-link active text-white" href="#">Ayuda</a></li>
+                                <li class="nav-item"><a class="nav-link active text-white" href="#">Acerca de</a></li>
+                                <li class="nav-item"><a class="nav-link active text-white" href="#">Secciones</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End: Navbar Right Links -->
+            </div>
+        </header>
+        <!-- End: NavBar -->
+        <!-- Start: homeLinkAndModuleHeader -->
+        <div class="row g-0">
+            <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 text-center my-auto" id="btnDiv">
+                <a class="btn visible" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" target="_blank"
+                    title="Regresar al inicio" id="homeLink"></a>
+            </div>
+            <div class="col-10 col-sm-10 col-md-11 col-lg-11 col-xl-11 col-xxl-11 text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center align-self-center"
+                id="moduleTitleDiv">
+                <p class="lead" id="moduleTitleParagraph">
+                    Titulo del módulo &gt; Tema &gt; sub-Tema</p>
+            </div>
+        </div>
+        <!-- End: homeLinkAndModuleHeader -->
+    </div>
     <!-- Start: Sidebar -->
     <div class="container-fluid" id="container">
-        <!-- Start: NavBar -->
-        <div class="sticky-top row g-0">
-            <div class="row g-0" id="navbar">
-                <div class="col-9 col-sm-9 col-md-8 col-lg-4 col-xl-4 col-xxl-4" id="navBarImgDiv">
-                    <img class="img-fluid visible" src="assets/img/logo_UTP.png" width="274" height="83"
-                        alt="Logo of Universidad Tecnológica de Pereira">
-                </div>
-                <div class="col-3 col-sm-3 col-md-4 col-lg-8 col-xl-8 col-xxl-8 text-end text-sm-end text-md-end text-lg-end text-xl-end text-xxl-end"
-                    id="navBarLinksDiv">
-                    <!-- Start: Navbar Right Links -->
-                    <nav class="navbar navbar-light navbar-expand-sm sticky-top d-inline-block py-3">
-                        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler"
-                                data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span
-                                    class="navbar-toggler-icon"></span></button>
-                            <div class="collapse navbar-collapse" id="navcol-2">
-                                <ul
-                                    class="navbar-nav navbar-nav-scroll text-start text-sm-start text-md-start text-lg-start text-xl-start text-xxl-start mx-auto">
-                                    <li class="nav-item"><a class="nav-link active" href="#">Ayuda</a></li>
-                                    <li class="nav-item"><a class="nav-link active" href="#">Acerca de</a></li>
-                                    <li class="nav-item"><a class="nav-link active" href="#">Secciones</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav><!-- End: Navbar Right Links -->
-                </div>
-            </div><!-- End: NavBar -->
-            <!-- Start: homeLinkAndModuleHeader -->
-            <div class="row g-0" id="header">
-                <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 text-center my-auto" id="btnDiv">
-                    <a class="btn visible" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" target="_blank"
-                        title="Regresar al inicio" id="homeLink"></a>
-                </div>
-                <div class="col-10 col-sm-10 col-md-11 col-lg-11 col-xl-11 col-xxl-11 text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center align-self-center"
-                    id="moduleTitleDiv">
-                    <p class="lead" id="moduleTitleParagraph">
-                        Titulo del módulo &gt; Tema &gt; sub-Tema</p>
-                </div>
-            </div><!-- End: homeLinkAndModuleHeader -->
-        </div>
         <!-- Start: moduleContent -->
         <div class="row g-0 py-3">
             <!-- Start: contentTable -->
@@ -64,12 +68,13 @@
                             lenguaje</a></li>
                     <li> <a href="#usageInIndustry">Usos de Julia en la industria</a></li>
                 </ol>
-            </div><!-- End: contentTable -->
-            <!-- Start: content -->
-            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3 text-break pb-sm-5 pb-md-5">
             </div>
+            <!-- End: contentTable -->
+            <!-- Start: content -->
+            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3 text-break pb-sm-5 pb-md-5"></div>
             <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9 ps-5 pt-sm-5 p-md-5">
-                <h1 id="GeneralDescriptionAndCharacteristics">1. Descripción general y características del lenguaje</h1>
+                <h1 id="GeneralDescriptionAndCharacteristics">1. Descripción general y características del lenguaje
+                </h1>
                 <section class="lead text-break fs-5">
                     <p>
                         El lenguaje de programación Julia surge como alternativa para los problemas relacionados
@@ -226,44 +231,17 @@
                     </p>
                 </section>
             </div>
-        </div><!-- End: ModuleSubject container -->
-    </div><!-- End: content -->
-    </div><!-- End: moduleContent -->
+            <!-- End: content -->
+        </div>
+        <!-- End: moduleContent -->
     </div><!-- End: Sidebar -->
     <!-- Start: Footer -->
-    <footer class="text-white bg-dark">
-        <div class="container py-4 py-lg-5">
-            <div class="row d-xxl-flex flex-row justify-content-xxl-center">
-                <!-- Start: Services -->
-                <div class="col-sm-4 col-md-3 text-lg-start d-flex flex-column align-items-xxl-center item"
-                    id="footerLogo"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                        viewBox="0 0 16 16" class="bi bi-star">
-                        <path
-                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
-                        </path>
-                    </svg></div><!-- End: Services -->
-                <!-- Start: About -->
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
-                    <h3 class="fs-6 text-white">About</h3>
-                    <ul class="list-unstyled">
-                        <li><a class="link-light" href="#">Company</a></li>
-                        <li><a class="link-light" href="#">Team</a></li>
-                        <li><a class="link-light" href="#">Legacy</a></li>
-                    </ul>
-                </div><!-- End: About -->
-                <!-- Start: Careers -->
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
-                    <h3 class="fs-6 text-white">Sitemap</h3>
-                    <ul class="list-unstyled">
-                        <li><a class="link-light" href="#">Something</a></li>
-                        <li><a class="link-light" href="#">Something</a></li>
-                    </ul>
-                </div><!-- End: Careers -->
-            </div>
+    <footer>
+        <div class="container ">
             <hr><!-- Start: Copyright-socialMedia-row -->
-            <div class="d-flex justify-content-between align-items-center pt-3">
-                <p class="mb-0">Copyright © 2022 Brand</p>
-                <ul class="list-inline mb-0">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <p>Copyright © 2022 Brand</p>
+                <ul class="list-inline">
                     <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
                             fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
                             <path

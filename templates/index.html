@@ -5,45 +5,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
-    <title>Julia project</title>
+    <title>Aprendiendo a programar en Julia</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/shared.css">
 </head>
 
 <body>
-    <div class="container-fluid" style="padding-right: 25px;padding-left: 25px;padding-top: 10px;">
-        <!-- Start: NavBar -->
-        <div class="row g-0 text-sm-end text-md-end text-lg-end text-xl-end text-xxl-end" style="padding-bottom: 10px;">
-            <div
-                class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center">
-                <img src="assets/img/logo_UTP.png" width="274" height="83" style="max-width: 100%;padding: 0px;">
-            </div>
-            <!-- Start: NavBar-options -->
-            <div
-                class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center mx-auto">
-                <!-- Start: Navbar Right Links -->
-                <nav class="navbar navbar-light navbar-expand-md sticky-top text-end d-inline-block py-3"
-                    style="padding: 0px;">
-                    <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler"
-                            data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span
-                                class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navcol-1">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item"><a class="nav-link active" href="#">Ayuda</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="#">Acerca de</a></li>
-                                <li class="nav-item"><a class="nav-link active" href="#">Secciones</a></li>
-                            </ul>
-                        </div>
+    <!-- Start: NavBar -->
+    <header class="row g-0">
+        <div class="col-9 col-sm-9 col-md-8 col-lg-4 col-xl-4 col-xxl-4" id="navBarImgDiv">
+            <img class="img-fluid visible" src="assets/img/logo_UTP.png" width="274" height="83"
+                alt="Logo of Universidad Tecnológica de Pereira">
+        </div>
+        <div class="col-3 col-sm-3 col-md-4 col-lg-8 col-xl-8 col-xxl-8 text-end text-sm-end text-md-end text-lg-end text-xl-end text-xxl-end"
+            id="navBarLinksDiv">
+            <!-- Start: Navbar Right Links -->
+            <nav class="navbar navbar-light navbar-expand-sm sticky-top d-inline-block py-3">
+                <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler"
+                        data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-2">
+                        <ul
+                            class="navbar-nav navbar-nav-scroll text-start text-sm-start text-md-start text-lg-start text-xl-start text-xxl-start mx-auto">
+                            <li class="nav-item "><a class="nav-link text-white" href="#">Ayuda</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Acerca de</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Secciones</a></li>
+                        </ul>
                     </div>
-                </nav><!-- End: Navbar Right Links -->
-            </div><!-- End: NavBar-options -->
-        </div><!-- End: NavBar -->
+                </div>
+            </nav><!-- End: Navbar Right Links -->
+        </div>
+    </header>
+    <!-- End: NavBar -->
+    <!-- End: NavBar -->
+    <div class="container-fluid py-2">
         <!-- Start: GeneralProjectInfo -->
-        <div class="row g-0 d-lg-flex" style="background: #EEEEEEEE;margin: 0px;padding: 85px 50px 85px 50px;">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" style="padding: 0px;">
+        <div class="row g-0 d-lg-flex" id="generalProjectInfo">
+            <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5 pe-3">
+                <img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
+                    src="./assets/img/placeholder.png">
+                <img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
+                    src="./assets/img/placeholder.png">
+            </div>
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7 ps-3">
                 <!-- Start: GeneralProject-Title -->
-                <h1 class="display-1 text-break text-center" style="font-size: 64.9px;">PROJECT TITLE</h1>
+                <span class="display-3 d-block text-break text-center">
+                    <strong> PROGRAMACIÓN CON JULIA</strong>
+                </span>
                 <!-- End: GeneralProject-Title -->
                 <!-- Start: GeneralProject-FeaturesBadges -->
                 <div class="row g-0">
@@ -68,198 +79,80 @@
                 </div><!-- End: GeneralProject-Description -->
             </div>
         </div><!-- End: GeneralProjectInfo -->
-        <!-- Start: JuliaFeatures -->
-        <div class="row g-0" style="border-style: none;padding-top: 15px;padding-bottom: 15px;">
-            <div class="col-auto col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 m-auto">
-                <!-- Start: JuliaFeatures-Title -->
-                <p style="font-size: 40px;margin-bottom: 0px;">Características de Julia</p>
-                <!-- End: JuliaFeatures-Title -->
-                <!-- Start: JuliaFeatures-Tabs -->
-                <div class="row g-0" style="color: rgb(0,0,0);padding-bottom: 0px;border-style: none;">
-                    <div class="col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto col-xxl-auto m-auto m-sm-auto m-md-auto m-lg-auto m-xl-auto m-xxl-auto"
-                        style="border-style: none;">
-                        <div>
-                            <ul class="nav nav-tabs" role="tablist" style="border-style: none;">
-                                <!-- Start: JuliaFeatures-Tab#1 -->
-                                <li class="nav-item" role="presentation"><a class="nav-link active" role="tab"
-                                        data-bs-toggle="tab" href="#tab-1">Tab 1</a></li>
-                                <!-- End: JuliaFeatures-Tab#1 -->
-                                <!-- Start: JuliaFeatures-Tab#2 -->
-                                <li class="nav-item" role="presentation"><a class="nav-link" role="tab"
-                                        data-bs-toggle="tab" href="#tab-2">Tab 2</a></li>
-                                <!-- End: JuliaFeatures-Tab#2 -->
-                                <!-- Start: JuliaFeatures-Tab#3 -->
-                                <li class="nav-item" role="presentation"><a class="nav-link" role="tab"
-                                        data-bs-toggle="tab" href="#tab-3">Tab 3</a></li>
-                                <!-- End: JuliaFeatures-Tab#3 -->
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane fade show active" role="tabpanel" id="tab-1">
-                                    <div class="row g-0">
-                                        <div
-                                            class="col-auto col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center justify-content-xxl-center align-items-xxl-center">
-                                            <img width="530" height="189" src="assets/img/logo_UTP.png"
-                                                style="max-width: 100%;">
-                                        </div>
-                                        <div
-                                            class="col-auto col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 text-center align-items-xxl-center">
-                                            <p><span style="color: rgb(0, 0, 0);">Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                                    labore et dolore magna aliqua. Sagittis eu volutpat odio facilisis
-                                                    mauris. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
-                                                    Purus faucibus ornare suspendisse sed nisi. Est ante in nibh mauris
-                                                    cursus. Ornare arcu odio ut sem nulla pharetra. Et ultrices neque
-                                                    ornare aenean euismod. Nam libero justo laoreet sit amet cursus sit
-                                                    amet dictum.&nbsp;</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" role="tabpanel" id="tab-3">
-                                    <div class="row g-0">
-                                        <div
-                                            class="col-auto col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 d-xxl-flex justify-content-xxl-center align-items-xxl-center">
-                                            <img width="530" height="189" src="assets/img/logo_UTP.png"
-                                                style="max-width: 100%;">
-                                        </div>
-                                        <div
-                                            class="col-auto col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 text-center align-items-xxl-center">
-                                            <p><span style="color: rgb(0, 0, 0);">Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                                    labore et dolore magna aliqua. Sagittis eu volutpat odio facilisis
-                                                    mauris. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
-                                                    Purus faucibus ornare suspendisse sed nisi. Est ante in nibh mauris
-                                                    cursus. Ornare arcu odio ut sem nulla pharetra. Et ultrices neque
-                                                    ornare aenean euismod. Nam libero justo laoreet sit amet cursus sit
-                                                    amet dictum.&nbsp;</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" role="tabpanel" id="tab-2">
-                                    <div class="row g-0">
-                                        <div
-                                            class="col-auto col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 d-xxl-flex justify-content-xxl-center align-items-xxl-center">
-                                            <img width="530" height="189" src="assets/img/logo_UTP.png"
-                                                style="max-width: 100%;">
-                                        </div>
-                                        <div
-                                            class="col-auto col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 text-center align-items-xxl-center">
-                                            <p><span style="color: rgb(0, 0, 0);">Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                                    labore et dolore magna aliqua. Sagittis eu volutpat odio facilisis
-                                                    mauris. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
-                                                    Purus faucibus ornare suspendisse sed nisi. Est ante in nibh mauris
-                                                    cursus. Ornare arcu odio ut sem nulla pharetra. Et ultrices neque
-                                                    ornare aenean euismod. Nam libero justo laoreet sit amet cursus sit
-                                                    amet dictum.&nbsp;</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End: JuliaFeatures-Tabs -->
-            </div>
-        </div><!-- End: JuliaFeatures -->
         <!-- Start: Modules -->
-        <div class="row g-0" style="padding-top: 15px;padding-bottom: 15px;">
+        <div class="row g-0" id="modulesAccess">
             <div class="col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto col-xxl-auto">
                 <!-- Start: Modules-Title -->
                 <p style="font-size: 40px;margin-bottom: 0px;">Cursos</p><!-- End: Modules-Title -->
                 <div class="row g-0 row-cols-4 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-4">
                     <!-- Start: Module-1 -->
                     <div class="col-auto col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3" style="padding: 10px;">
-                        <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
-                                src="./assets/img/placeholder.png">
+                        <div class="card">
+                            <img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
+                                src="./assets/img/moduleOne.png">
                             <div class="card-body p-4">
-                                <p class="text-primary card-text mb-0">Article</p>
+                                <!-- <p class="text-primary card-text mb-0">Article</p> -->
                                 <h4 class="card-title">Primeros pasos: contextualización</h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
                                     odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
                                     at eget metus.</p>
-                                <button class="btn btn-primary" id="modulesOneBtn">Button</button>
+                                <button class="btn btn-primary" id="modulesOneBtn">Comenzar</button>
                             </div>
                         </div>
                     </div><!-- End: Module-1 -->
                     <!-- Start: Module-2 -->
                     <div class="col-auto col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 d-flex" style="padding: 10px;">
                         <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
-                                src="./assets/img/placeholder.png">
+                                src="./assets/img/moduleTwo.png">
                             <div class="card-body flex-column p-4">
-                                <p class="text-primary card-text mb-0">Article</p>
+                                <!-- <p class="text-primary card-text mb-0">Article</p> -->
                                 <h4 class="card-title">Conceptos básicos</h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
                                     odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
                                     at eget metus.</p>
-                                <button class="btn btn-primary" id="modulesTwoBtn">Button</button>
+                                <button class="btn btn-primary" id="modulesTwoBtn">Comenzar</button>
                             </div>
                         </div>
                     </div><!-- End: Module-2 -->
                     <!-- Start: Module-3 -->
                     <div class="col-auto col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 d-flex" style="padding: 10px;">
                         <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
-                                src="./assets/img/placeholder.png">
+                                src="./assets/img/moduleThree.png">
                             <div class="card-body p-4">
-                                <p class="text-primary card-text mb-0">Article</p>
+                                <!-- <p class="text-primary card-text mb-0">Article</p> -->
                                 <h4 class="card-title">Explorando modulos</h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
                                     odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
                                     at eget metus.</p>
-                                <button class="btn btn-primary" id="modulesThreeBtn">Button</button>
+                                <button class="btn btn-primary" id="modulesThreeBtn">Comenzar</button>
                             </div>
                         </div>
                     </div><!-- End: Module-3 -->
                     <!-- Start: Module-4 -->
                     <div class="col-auto col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 d-flex" style="padding: 10px;">
                         <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;"
-                                src="./assets/img/placeholder.png">
+                                src="./assets/img/moduleFour.png">
                             <div class="card-body p-4">
-                                <p class="text-primary card-text mb-0">Article</p>
+                                <!-- <p class="text-primary card-text mb-0">Article</p> -->
                                 <h4 class="card-title">Otros recursos para el aprendizaje</h4>
                                 <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
                                     odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
                                     at eget metus.</p>
-                                <button class="btn btn-primary" id="modulesFourBtn">Button</button>
+                                <button class="btn btn-primary" id="modulesFourBtn">Comenzar</button>
                             </div>
                         </div>
                     </div><!-- End: Module-4 -->
                 </div>
             </div>
         </div><!-- End: Modules -->
-    </div><!-- Start: Footer -->
-    <footer class="text-white bg-dark">
-        <div class="container py-4 py-lg-5">
-            <div class="row d-xxl-flex flex-row justify-content-xxl-center">
-                <!-- Start: Services -->
-                <div class="col-sm-4 col-md-3 text-lg-start d-flex flex-column align-items-xxl-center item"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                        viewBox="0 0 16 16" class="bi bi-star" style="font-size: 112px;">
-                        <path
-                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
-                        </path>
-                    </svg></div><!-- End: Services -->
-                <!-- Start: About -->
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
-                    <h3 class="fs-6 text-white">About</h3>
-                    <ul class="list-unstyled">
-                        <li><a class="link-light" href="#">Company</a></li>
-                        <li><a class="link-light" href="#">Team</a></li>
-                        <li><a class="link-light" href="#">Legacy</a></li>
-                    </ul>
-                </div><!-- End: About -->
-                <!-- Start: Careers -->
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
-                    <h3 class="fs-6 text-white">Sitemap</h3>
-                    <ul class="list-unstyled">
-                        <li><a class="link-light" href="#">Something</a></li>
-                        <li><a class="link-light" href="#">Something</a></li>
-                        <li><a href="#"><span style="color: rgb(249, 250, 251);">Something</span></a><br></li>
-                    </ul>
-                </div><!-- End: Careers -->
-            </div>
+    </div>
+    <!-- Start: Footer -->
+    <footer>
+        <div class="container ">
             <hr><!-- Start: Copyright-socialMedia-row -->
-            <div class="d-flex justify-content-between align-items-center pt-3">
-                <p class="mb-0">Copyright © 2022 Brand</p>
-                <ul class="list-inline mb-0">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <p>Copyright © 2022 Brand</p>
+                <ul class="list-inline">
                     <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
                             fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
                             <path

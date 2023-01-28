@@ -1,4 +1,4 @@
-#container {
+/* #container {
     padding-right: 25px;
     padding-left: 15px;
     margin-left: 0px;
@@ -9,13 +9,13 @@
     padding-top: 0px;
     background: var(--bs-black);
     position: sticky;
-}
+} */
 
 #btnDiv {
     width: 75.9px;
 }
 
-#navbar {
+/* #navbar {
     margin: 0px;
     position: sticky;
     overflow: hidden;
@@ -24,13 +24,16 @@
     padding-top: 10px;
     background: var(--bs-gray-400);
     padding-bottom: 10px;
-}
+} */
+
+/* div #homeLink {
+    background-color: var(--bs-black);
+} */
 
 #homeLink {
-    background: url("../../assets/img/icons8-home-page-30.png") center / contain no-repeat, var(--bs-border-color-translucent);
+    background: url("../../assets/img/icons8-home-page-30.png") center / contain no-repeat;
     width: 40px;
     height: 45px;
-    --bs-body-bg: var(--bs-btn-bg);
     border-width: 0px;
 }
 
@@ -49,7 +52,7 @@
     text-align: left;
 }
 
-#navBarImgDiv {
+/* #navBarImgDiv {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -60,7 +63,7 @@
 
 #navBarLinksDiv {
     padding-right: 15px;
-}
+} */
 
 #contentTableDiv {
     padding-left: 12px;
@@ -88,16 +91,11 @@
 }
 
 
-
 section {
     padding-right: 20px;
     padding-left: 20px;
 }
 
-footer {
+/* footer {
     position: relative;
-}
-
-#footerLogo {
-    font-size: 112px;
-}
+} */
