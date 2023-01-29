@@ -10,9 +10,16 @@
     background: var(--bs-black);
     position: sticky;
 } */
+#homeLinkAndModuleHeader>div {
+    background-color: #cdc9c9;
+    padding-left: 12px;
+}
 
-#btnDiv {
-    width: 75.9px;
+#homeLinkAndModuleHeader>div>button {
+    background: url("../../assets/img/icons8-home-page-30.png") center / contain no-repeat;
+    width: 40px;
+    height: 45px;
+    border-width: 0px;
 }
 
 /* #navbar {
@@ -30,26 +37,18 @@
     background-color: var(--bs-black);
 } */
 
-#homeLink {
-    background: url("../../assets/img/icons8-home-page-30.png") center / contain no-repeat;
-    width: 40px;
-    height: 45px;
-    border-width: 0px;
-}
 
-#moduleTitleDiv {
-    padding: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background: var(--bs-border-color-translucent);
-    padding-left: 10px;
-    padding-right: 10px;
-}
+/* #homeLinkAndModuleHeader{
+    background-color: ;
+} */
 
 #moduleTitleParagraph {
     font-size: 20px;
     color: var(--bs-white);
     text-align: left;
+    background-color: #cdc9c9;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* #navBarImgDiv {
@@ -66,15 +65,19 @@
 } */
 
 #contentTableDiv {
+    background-color: #cdc9c9;
+    padding-top: 10px;
     padding-left: 12px;
     padding-bottom: 100px;
-    top: 20%;
+    top: 13.3%;
     left: 0;
     bottom: 0;
     position: fixed;
     overflow-y: scroll;
     overflow-x: hidden;
+
 }
+
 
 /* li {
     border: #000 1px solid;
